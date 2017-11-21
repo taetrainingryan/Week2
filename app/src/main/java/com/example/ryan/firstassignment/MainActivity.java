@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
 
         createacc = (Button) findViewById(R.id.button);
 
-
     }
 
     public void clickButtonEvents (View v){

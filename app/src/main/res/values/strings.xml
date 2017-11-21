@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">FirstAssignment</string>
     <string name="date_picker">%3$s/%2$s/%1$s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

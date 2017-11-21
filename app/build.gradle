@@ -23,7 +23,7 @@ android {
     sourceSets {
         main {
             assets.srcDirs = ['src/main/assets', 'src/main/res/assets', 'src/main/res/assets2/']
-            java.srcDirs = ['src/main/java','src/main/java-gen','../greendaolib/classes']
+            java.srcDirs = ['src/main/java', 'src/main/java-gen', '../greendaolib/classes']
         }
     }
 }
