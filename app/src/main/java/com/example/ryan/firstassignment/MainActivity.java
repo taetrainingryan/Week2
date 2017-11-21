@@ -9,7 +9,9 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+import com.example.ryan.firstassignment.fragments.Buttons;
+
+public class MainActivity extends AppCompatActivity implements Buttons{
 
     Button createacc;
 
@@ -31,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
-        else if (v.getId()==R.id.login){
+        else if (v.getId()== R.id.login){
 
             Intent intent = new Intent(MainActivity.this, login.class);
             startActivity(intent);
@@ -46,4 +48,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void buttonClick(View v) {
+
+
+
+    }
 }

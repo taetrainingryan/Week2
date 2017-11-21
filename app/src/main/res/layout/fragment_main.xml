@@ -127,7 +127,6 @@
         android:layout_marginRight="30dp"
         android:background="@drawable/gradient_button_background2x"
         android:text="Login"
-        android:onClick="loginPage"
         android:textAllCaps="false"
         android:textSize="20sp" />
 
