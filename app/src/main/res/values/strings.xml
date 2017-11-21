@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FirstAssignment</string>
+    <string name="date_picker">%3$s/%2$s/%1$s</string>
+</resources>
