@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.example.ryan.firstassignment.R;
 
@@ -17,8 +16,8 @@ import com.example.ryan.firstassignment.R;
  */
 public class MainFragment extends Fragment{
 
-    private Buttons buttonclicked;
-    private Button login;
+    private DataPasser myInterface;
+    private Button login, register;
 
     public MainFragment() {
         // Required empty public constructor
@@ -28,7 +27,7 @@ public class MainFragment extends Fragment{
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        buttonclicked = (Buttons) getActivity();
+        myInterface = (DataPasser) getActivity();
     }
 
     @Override
@@ -44,13 +43,22 @@ public class MainFragment extends Fragment{
         super.onViewCreated(view, savedInstanceState);
 
         login = (Button) view.findViewById(R.id.login);
+        register = (Button) view.findViewById(R.id.button);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                buttonclicked.buttonClick(view);
+                myInterface.buttonClick(view);
 
+            }
+        });
+
+        register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                myInterface.buttonClick(view);
             }
         });
 

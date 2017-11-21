@@ -190,6 +190,8 @@ public class signup extends AppCompatActivity implements DatePickerDialogFragmen
     @Override
     public void onDialogDateSet(int reference, int year, int monthOfYear, int dayOfMonth) {
 
+        Toast.makeText(this, "being called", Toast.LENGTH_SHORT).show();
+
         age.setText(getString(R.string.date_picker,year,monthOfYear,dayOfMonth));
 
     }

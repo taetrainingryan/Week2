@@ -7,17 +7,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.ryan.firstassignment.Realm.RealmController;
 import com.example.ryan.firstassignment.Realm.RealmLogin;
 
 import java.util.ArrayList;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import io.realm.Realm;
-import io.realm.RealmResults;
 
 public class createaccount extends AppCompatActivity {
 
@@ -110,39 +106,8 @@ public class createaccount extends AppCompatActivity {
             Intent intent = new Intent(createaccount.this, signup.class);
             startActivity(intent);
 
+            }
         }
-
-    }
-
-    private boolean isValidEmail(String email) {
-        String EMAIL_PATTERN = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
-                + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,6})$";
-
-        Pattern pattern = Pattern.compile(EMAIL_PATTERN);
-        Matcher matcher = pattern.matcher(email);
-        return matcher.matches();
-    }
-
-    public boolean isValidPassword(final String password) {
-
-        /*
-            ^                 # start-of-string
-            (?=.*[0-9])       # a digit must occur at least once
-            (?=.*[a-z])       # a lower case letter must occur at least once
-            (?=.*[A-Z])       # an upper case letter must occur at least once
-            (?=.*[@#$%^&+=])  # a special character must occur at least once
-            (?=\S+$)          # no whitespace allowed in the entire string
-            .{8,}             # anything, at least eight places though
-            $                 # end-of-string
-         */
-
-            String PASS_PATTERN = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,}$";
-
-            Pattern pattern = Pattern.compile(PASS_PATTERN);
-            Matcher matcher = pattern.matcher(password);
-            return matcher.matches();
-        }
-
     }
 
 

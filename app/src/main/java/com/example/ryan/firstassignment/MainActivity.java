@@ -1,17 +1,14 @@
 package com.example.ryan.firstassignment;
 
 import android.content.Intent;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import com.example.ryan.firstassignment.fragments.Buttons;
+import com.example.ryan.firstassignment.fragments.DataPasser;
 
-public class MainActivity extends AppCompatActivity implements Buttons{
+public class MainActivity extends AppCompatActivity {
 
     Button createacc;
 
@@ -47,11 +44,4 @@ public class MainActivity extends AppCompatActivity implements Buttons{
         startActivity(intent);
     }
 
-
-    @Override
-    public void buttonClick(View v) {
-
-
-
-    }
 }

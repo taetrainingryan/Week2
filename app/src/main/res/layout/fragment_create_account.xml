@@ -7,7 +7,7 @@
     android:background="@android:color/black">
 
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/saveDetails"
         android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:layout_alignParentBottom="true"
@@ -19,15 +19,14 @@
         android:text="Next"
         android:textAllCaps="false"
         android:textSize="20sp"
-        android:theme="@style/AppTheme"
-        android:onClick="clickButtonEvents"/>
+        android:theme="@style/AppTheme" />
 
     <TextView
         android:id="@+id/passwordHint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/passwordInput2"
-        android:layout_alignStart="@+id/nextButton"
+        android:layout_alignStart="@+id/saveDetails"
         android:layout_marginBottom="40dp"
         android:layout_marginRight="20dp"
         android:fontFamily="@font/museosans_300"

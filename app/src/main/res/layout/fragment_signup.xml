@@ -46,7 +46,6 @@
         android:text="Upload"
         android:textAllCaps="false"
         android:textSize="20sp"
-        android:onClick="pickImage"
         app:layout_constraintEnd_toEndOf="@+id/image"
         app:layout_constraintStart_toStartOf="@+id/image"
         app:layout_constraintTop_toBottomOf="@+id/image" />
@@ -81,7 +80,7 @@
         app:layout_constraintTop_toBottomOf="@+id/username" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/datePicker"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="8dp"
@@ -89,14 +88,13 @@
         android:text="Choose Birth Date"
         android:textAllCaps="false"
         android:textSize="20sp"
-        android:onClick="onDateClick"
         app:layout_constraintEnd_toEndOf="@+id/age"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="@+id/age"
         app:layout_constraintTop_toBottomOf="@+id/age" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/signupSendData"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginBottom="8dp"
@@ -119,7 +117,7 @@
         android:background="@android:color/white"
         app:layout_constraintEnd_toEndOf="@+id/age"
         app:layout_constraintStart_toStartOf="@+id/age"
-        app:layout_constraintTop_toBottomOf="@+id/button3" />
+        app:layout_constraintTop_toBottomOf="@+id/datePicker" />
 
     <RadioGroup
         android:layout_width="223dp"
